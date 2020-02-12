@@ -31,8 +31,11 @@ public class App {
         System.out.println("rectangleHole can fit rectanglePeg1 = " + rectangleHole.canFit(rectanglePeg1) + "\n");
         System.out.println("rectangleHole can fit rectanglePeg2 = " + rectangleHole.canFit(rectanglePeg2) + "\n");
 
-        RectanglePegAdapter rectanglePegAdapter1 = new RectanglePegAdapter(roundPeg);
-        System.out.println("rectangleHole can fit roundPeg = " + rectangleHole.canFit(rectanglePegAdapter1) + "\n");
+        RectanglePegAdapter rectanglePegAdapter = new RectanglePegAdapter(roundPeg);
+        System.out.println("rectangleHole can fit roundPeg = " + rectangleHole.canFit(rectanglePegAdapter) + "\n");
+        RoundPeg roundPeg2 = new RoundPeg(4.5);
+        rectanglePegAdapter.setRoundPeg(roundPeg2);
+        System.out.println("rectangleHole can fit roundPeg2 = " + rectangleHole.canFit(rectanglePegAdapter) + "\n");
         
     }
 }
