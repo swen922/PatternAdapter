@@ -33,10 +33,6 @@ public class App {
 
         RectanglePegAdapter rectanglePegAdapter1 = new RectanglePegAdapter(roundPeg);
         System.out.println("rectangleHole can fit roundPeg = " + rectangleHole.canFit(rectanglePegAdapter1) + "\n");
-
-
-
-
-
+        
     }
 }
