@@ -6,6 +6,8 @@ import peg.RectanglePeg;
 import peg.RoundPeg;
 import peg.SquarePeg;
 
+/** Адаптер, также известен как: Wrapper, Обёртка, Adapter */
+
 public class App {
 
     public static void main(String[] args) {
@@ -33,7 +35,7 @@ public class App {
         System.out.println("rectangleHole can fit squarePeg1 = " + rectangleHole.canFit(squarePeg1) + "\n");
         System.out.println("rectangleHole can fit squarePeg2 = " + rectangleHole.canFit(squarePeg2) + "\n");
 
-        
+
         RectanglePegAdapter rectanglePegAdapter = new RectanglePegAdapter(roundPeg);
         System.out.println("rectangleHole can fit roundPeg = " + rectangleHole.canFit(rectanglePegAdapter) + "\n");
         RoundPeg roundPeg2 = new RoundPeg(4.5);
